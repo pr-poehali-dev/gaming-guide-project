@@ -6,16 +6,37 @@ type Section = "home" | "catalog" | "guides" | "story" | "secrets" | "forum";
 const HERO_IMAGE =
   "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/7b78e71e-4b08-428b-8366-f64a4eebf070.jpg";
 
+const IMG = {
+  cyberpunk: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/8d1ee6aa-2fc0-435a-8390-76073bcb62e8.jpg",
+  eldenRing: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/248d7435-7f03-44ab-9ad4-3967c78c5945.jpg",
+  godOfWar: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/02d5012d-930e-4ce2-a1b4-218999a6d315.jpg",
+  witcher: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/a5b5ee9d-b154-4259-ab50-fdd9001535c6.jpg",
+  hollowKnight: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/397a7236-2624-414e-858f-7f24d38a3b73.jpg",
+  sekiro: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/c9ce7040-b575-4c8d-a80a-5e0ad02242ce.jpg",
+  rdr2: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/f9cd8830-8e08-4a1b-9493-6b157cbc86c8.jpg",
+  darkSouls: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/e35d2b46-6175-414b-877f-dc527d16c3d1.jpg",
+  hades: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/49e9481f-2681-42c6-8763-2420c4784447.jpg",
+  baldursGate: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/4d78aff7-b6e9-4115-abd3-3073c4383566.jpg",
+  deathStranding: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/49a64909-0feb-47d9-bc36-c8b461847812.jpg",
+  celeste: "https://cdn.poehali.dev/projects/76ffde4c-5cc6-4362-9f06-8715109f5a84/files/7c1a48ff-b11e-47b0-b876-97a706b5648e.jpg",
+};
+
 const GAMES = [
-  { id: 1, title: "Cyberpunk 2077", genre: "RPG", platform: "PC", rating: 9.1, img: HERO_IMAGE, desc: "Мегаполис будущего, где каждый выбор имеет цену." },
-  { id: 2, title: "Elden Ring", genre: "Action", platform: "PS5", rating: 9.8, img: HERO_IMAGE, desc: "Открытый мир, созданный Миядзаки и Мартином." },
-  { id: 3, title: "God of War", genre: "Action", platform: "PS5", rating: 9.5, img: HERO_IMAGE, desc: "Кратос и Атрей против скандинавских богов." },
-  { id: 4, title: "The Witcher 3", genre: "RPG", platform: "PC", rating: 9.7, img: HERO_IMAGE, desc: "Геральт ищет приёмную дочь в мире войны." },
-  { id: 5, title: "Hollow Knight", genre: "Indie", platform: "PC", rating: 9.3, img: HERO_IMAGE, desc: "Рыцарь-жук исследует подземное королевство." },
-  { id: 6, title: "Sekiro", genre: "Action", platform: "Xbox", rating: 9.4, img: HERO_IMAGE, desc: "Синоби мстит за поруганную честь своего господина." },
+  { id: 1, title: "Cyberpunk 2077", genre: "RPG", platform: "PC", rating: 9.1, img: IMG.cyberpunk, desc: "Мегаполис будущего, где каждый выбор имеет цену." },
+  { id: 2, title: "Elden Ring", genre: "Action", platform: "PC", rating: 9.8, img: IMG.eldenRing, desc: "Открытый мир, созданный Миядзаки и Мартином." },
+  { id: 3, title: "God of War", genre: "Action", platform: "PS5", rating: 9.5, img: IMG.godOfWar, desc: "Кратос и Атрей против скандинавских богов." },
+  { id: 4, title: "The Witcher 3", genre: "RPG", platform: "PC", rating: 9.7, img: IMG.witcher, desc: "Геральт ищет приёмную дочь в мире войны." },
+  { id: 5, title: "Hollow Knight", genre: "Indie", platform: "PC", rating: 9.3, img: IMG.hollowKnight, desc: "Рыцарь-жук исследует подземное королевство." },
+  { id: 6, title: "Sekiro", genre: "Action", platform: "Xbox", rating: 9.4, img: IMG.sekiro, desc: "Синоби мстит за поруганную честь своего господина." },
+  { id: 7, title: "Red Dead Redemption 2", genre: "Adventure", platform: "PC", rating: 9.7, img: IMG.rdr2, desc: "Эпическая история аутло в закатную эпоху Дикого Запада." },
+  { id: 8, title: "Dark Souls 3", genre: "Action", platform: "PC", rating: 9.0, img: IMG.darkSouls, desc: "Последний отчаянный бой против угасания огня." },
+  { id: 9, title: "Hades", genre: "Indie", platform: "PC", rating: 9.5, img: IMG.hades, desc: "Сын бога смерти пробивается из подземного царства." },
+  { id: 10, title: "Baldur's Gate 3", genre: "RPG", platform: "PC", rating: 9.8, img: IMG.baldursGate, desc: "Грандиозная D&D RPG с последствиями каждого выбора." },
+  { id: 11, title: "Death Stranding", genre: "Adventure", platform: "PS5", rating: 8.8, img: IMG.deathStranding, desc: "Курьер связывает разрушенную Америку после апокалипсиса." },
+  { id: 12, title: "Celeste", genre: "Indie", platform: "PC", rating: 9.4, img: IMG.celeste, desc: "Девушка карабкается на гору, преодолевая внутренних демонов." },
 ];
 
-const GENRES = ["Все", "RPG", "Action", "Indie"];
+const GENRES = ["Все", "RPG", "Action", "Indie", "Adventure"];
 const PLATFORMS = ["Все", "PC", "PS5", "Xbox"];
 
 const GUIDES = [
@@ -171,7 +192,7 @@ export default function Index() {
             <div className="relative overflow-hidden" style={{ minHeight: "90vh" }}>
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${HERO_IMAGE})`, filter: "brightness(0.22) saturate(0.6)" }}
+                style={{ backgroundImage: `url(${IMG.cyberpunk})`, filter: "brightness(0.22) saturate(0.6)" }}
               />
               <div className="absolute inset-0 bg-grid-pattern" />
               <div
@@ -244,7 +265,7 @@ export default function Index() {
                 </h2>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {GAMES.slice(0, 3).map((game) => (
+                {GAMES.slice(0, 6).map((game) => (
                   <div
                     key={game.id}
                     className="rounded-lg overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02] group"
